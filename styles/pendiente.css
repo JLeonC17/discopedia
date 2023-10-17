@@ -111,20 +111,20 @@ h2.heading_container {
 
 /* ALBUM IMAGES */
 #oktubre {
-    background-image: url(assets/covers/oktubre.jpg);
+    background-image: url(../assets/covers/oktubre.jpg);
 }
 #hesitationMarks {
-    background-image: url(assets/covers/hesitationMarks.jpg);
+    background-image: url(../assets/covers/hesitationMarks.jpg);
 }
 #anestesia {
-    background-image: url(assets/covers/anestesia.jpg);
+    background-image: url(../assets/covers/anestesia.jpg);
 }
 #utopia {
-    background-image: url(assets/covers/utopia.jpg);
+    background-image: url(../assets/covers/utopia.jpg);
 }
 #congratulations {
-    background-image: url(assets/covers/congratulations.jpg);
+    background-image: url(../assets/covers/congratulations.jpg);
 }
 #petSounds {
-    background-image: url(assets/covers/petSounds.jpg);
+    background-image: url(../assets/covers/petSounds.jpg);
 }
