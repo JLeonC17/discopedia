@@ -1,0 +1,167 @@
+@import url(utils.css);
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--bg0); 
+    background-image: 
+        linear-gradient(to top, var(--bg0_h), transparent),
+        url(/assets/texture.svg);
+    background-size: 6px;
+    min-height: 100vh;
+}
+
+#menu_container {
+    max-width: 100vw;
+    margin: 0 auto;
+    background-color: var(--bg0_h);
+    padding: 10px 10px 7vh 10px;
+}
+
+#top_container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 60vw;
+    margin: auto;
+}
+
+#logo_container {
+    flex:  0 auto; 
+}
+
+#logo_container img {
+    height: 150px;
+}
+
+#heading_container {
+    flex: 1;
+    text-align: center; 
+    align-self: center;
+}
+
+#heading_container h1 {
+    text-transform: uppercase;
+    color: var(--fg1);
+    line-height: 50px;
+    margin: 0;
+}
+
+#heading_container h2 {
+    font-variant: small-caps;
+    color: var(--fg2);
+    margin: 0;
+}
+
+#stripe_container {
+    flex: 0 0 auto;
+    display: flex; 
+}
+
+.stripe {
+    width: 30px;
+    height: 150px;
+    margin: 0 15px;
+}
+
+header {
+    background-color: var(--bg1);
+    height: 150px;
+    padding: 0px;
+    background-image: linear-gradient(
+    -45deg,
+    var(--bg3) 33.33%, 
+    transparent 33.33%, 
+    transparent 66.67%, 
+    var(--bg3) 66.67%, 
+    transparent 100% 
+  ),
+  linear-gradient(
+    -45deg,
+    var(--bg3) 33.33%, 
+    transparent 33.33%,
+    transparent 66.67%,
+    var(--bg3) 66.67%, 
+    transparent 100% 
+  ),
+  linear-gradient(
+    -45deg,
+    var(--bg3) 33.33%,
+    transparent 33.33%,
+    transparent 66.67%,
+    var(--bg3) 66.67% 
+  );
+}
+
+.nav_menu {
+    padding: 5px 0 5px 0;
+    text-align: center;
+    line-height: 32px;
+    background-color: var(--bg2);
+}
+
+ul.nav_menu {
+    margin-top: 1vh;
+}
+
+.nav_menu li{
+    display: inline;
+    padding: 10px 0;
+    font-size: 20px;
+    margin: 0 50px;
+}
+
+.nav_menu form {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_menu a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--fg1);
+    font-variant: small-caps;
+}
+
+.nav_menu a li {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.nav_menu input, .nav_menu input:focus-visible{
+    color: var(--fg1);
+    border: 0;
+    font-size: 20px;
+    font-variant: small-caps;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    max-width: 120px;
+}
+
+.nav_menu input::placeholder {
+    color: var(--fg1);
+}
+
+#footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 150px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    color: var(--bg3);
+    font-variant: small-caps;
+}
+
+footer img {
+    margin: 10px;
+    height: 20px;
+}

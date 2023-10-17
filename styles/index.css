@@ -1,0 +1,116 @@
+@import url(utils.css);
+@import url(header.css);
+
+:root {
+    --imageHeight: 8vw;
+    --imageWidth: 8vw;
+}
+
+.tier_container {
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+h2.tier_container {
+    margin-top: 20px;
+    color: var(--fg1);
+    font-variant: small-caps;
+}
+
+.album_container {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 10px 10px 1vh 10px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: var(--imageHeight);
+}
+
+.album {
+    margin: 1vw;
+    height: var(--imageHeight);
+    width: var(--imageWidth);
+    position: relative;
+}
+
+.album span {
+    color: var(--fg0);
+    font-variant: small-caps;
+    padding: 0.25vw;
+    position: absolute;
+    height: 1vw;
+    text-align: center;
+    width: calc(var(--imageWidth) - 0.5vw);
+    opacity: 75%;
+    display: flex;
+    align-items: center; 
+    justify-content: left; 
+    font-size: 1.4vh;
+}
+
+.album .titulo {
+    font-weight: 700;
+    bottom: 3vw;
+    left: 0;
+    background-color: var(--bg0_s);
+}
+
+.album .artista {
+    font-weight: 500;
+    bottom: 1.5vw;
+    right: 0;
+    background-color: var(--bg0);
+}
+
+.album .año {
+    font-weight: 300;
+    bottom: 0;
+    right: 0;
+    background-color: var(--bg0_h);
+}
+
+.album .imagen {
+    height: var(--imageHeight);
+    width: var(--imageWidth);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.album .datos {
+    height: var(--imageHeight);
+    width: var(--imageWidth);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.2s;
+    backdrop-filter: brightness(50%);
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.album .datos:hover {
+    opacity: 1;
+}
+
+/* ALBUM IMAGES */
+#vespertine {
+    background-image: url(/assets/covers/vespertine.jpg);
+}
+#constructionTimeAgain {
+    background-image: url(/assets/covers/constructionTimeAgain.jpg);
+}
+#ultra {
+    background-image: url(/assets/covers/ultra.jpg);
+}
+#fetchTheBoltCutters {
+    background-image: url(/assets/covers/fetchTheBoltCutters.jpg);
+}
+#mezzanine {
+    background-image: url(/assets/covers/mezzanine.jpg);
+}
+#elMalQuerer {
+    background-image: url(/assets/covers/elMalQuerer.jpg);
+}

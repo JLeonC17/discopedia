@@ -1,0 +1,226 @@
+:root {
+    /* BACKGROUNDS */
+    --bg0_h: #1d2021;
+    --bg0_s: #32302f;
+    --bg0: #282828;
+    --bg1: #3c3836;
+    --bg2: #504945;
+    --bg3: #665c54;
+    --bg4: #7c6f6d;
+    --bg5: #928374;
+    /* FOREGROUNDS */
+    --fg4: #a89984;
+    --fg3: #bdae93;
+    --fg2: #d5c4a1;
+    --fg1: #ebdbb2;
+    --fg0: #fbf1c7;
+    /* COLORS */
+    --red_bg: #cc241d;
+    --red_fg: #fb4934;
+    --green_bg: #98971a;
+    --green_fg: #b8bb26;
+    --yellow_bg: #d79921;
+    --yellow_fg: #fabd2f;
+    --blue_bg: #458588;
+    --blue_fg: #83a598;
+    --purple_bg: #b16286;
+    --purple_fg: #d3869b;
+    --aqua_bg: #689d6a;
+    --aqua_fg: #8ec07c;
+    --orange_bg: #d65d0e;
+    --orange_fg: #fe8019;
+}
+
+/* CLASES CUSTOM */
+/* Nota: estas clases fueron creadas por comodidad a la hora de la creación de estilos
+    del sitio */
+
+/* UTILS */
+
+.colorful_shadow {
+    position: relative;
+}
+
+.colorful_shadow::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    background-position: center center;
+    z-index: -1;
+    transition: all 0.1s linear;
+}
+
+
+.colorful_shadow_util::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    background-position: center center;
+    z-index: -1;
+    transition: all 0.1s linear;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.75)) blur(10px);
+}
+
+/* COLORS */
+.red_bg {
+    background-color: var(--red_bg);
+}
+.red_fg {
+    background-color: var(--red_fg);
+}
+.green_bg {
+    background-color: var(--green_bg);
+}
+.green_fg {
+    background-color: var(--green_fg);
+}
+.yellow_bg {
+    background-color: var(--yellow_bg);
+}
+.yellow_fg {
+    background-color: var(--yellow_fg);
+}
+.blue_bg {
+    background-color: var(--blue_bg);
+}
+.blue_fg {
+    background-color: var(--blue_fg);
+}
+.purple_bg {
+    background-color: var(--purple_bg);
+}
+.purple_fg {
+    background-color: var(--purple_fg);
+}
+.aqua_bg {
+    background-color: var(--aqua_bg);
+}
+.aqua_fg {
+    background-color: var(--aqua_fg);
+}
+.orange_bg {
+    background-color: var(--orange_bg);
+}
+.orange_fg {
+    background-color: var(--orange_fg);
+}
+
+/* COLOR HOVERS */
+.red_bg_hover:hover {
+    background-color: var(--red_bg);
+    transition: all 0.2s ease;
+}
+.red_fg_hover:hover {
+    background-color: var(--red_fg);
+    transition: all 0.2s ease;
+}
+.green_bg_hover:hover {
+    background-color: var(--green_bg);
+    transition: all 0.2s ease;
+}
+.green_fg_hover:hover {
+    background-color: var(--green_fg);
+    transition: all 0.2s ease;
+}
+.yellow_bg_hover:hover {
+    background-color: var(--yellow_bg);
+    transition: all 0.2s ease;
+}
+.yellow_fg_hover:hover {
+    background-color: var(--yellow_fg);
+    transition: all 0.2s ease;
+}
+.blue_bg_hover:hover {
+    background-color: var(--blue_bg);
+    transition: all 0.2s ease;
+}
+.blue_fg_hover:hover {
+    background-color: var(--blue_fg);
+    transition: all 0.2s ease;
+}
+.purple_bg_hover:hover {
+    background-color: var(--purple_bg);
+    transition: all 0.2s ease;
+}
+.purple_fg_hover:hover {
+    background-color: var(--purple_fg);
+    transition: all 0.2s ease;
+}
+.aqua_bg_hover:hover {
+    background-color: var(--aqua_bg);
+    transition: all 0.2s ease;
+}
+.aqua_fg_hover:hover {
+    background-color: var(--aqua_fg);
+    transition: all 0.2s ease;
+}
+.orange_bg_hover:hover {
+    background-color: var(--orange_bg);
+    transition: all 0.2s ease;
+}
+.orange_fg_hover:hover {
+    background-color: var(--orange_fg);
+    transition: all 0.2s ease;
+}
+
+/* COLOR LINES */
+.red_bg_line {
+    border: 0;
+    border-bottom: 2px solid var(--red_bg);
+}
+.red_fg_line {
+    border: 0;
+    border-bottom: 2px solid var(--red_fg);
+}
+.green_bg_line {
+    border: 0;
+    border-bottom: 2px solid var(--green_bg);
+}
+.green_fg_line {
+    border: 0;
+    border-bottom: 2px solid var(--green_fg);
+}
+.yellow_bg_line {
+    border: 0;
+    border-bottom: 2px solid var(--yellow_bg);
+}
+.yellow_fg_line {
+    border: 0;
+    border-bottom: 2px solid var(--yellow_fg);
+}
+.blue_bg_line {
+    border: 0;
+    border-bottom: 2px solid var(--blue_bg);
+}
+.blue_fg_line {
+    border: 0;
+    border-bottom: 2px solid var(--blue_fg);
+}
+.purple_bg_line {
+    border: 0;
+    border-bottom: 2px solid var(--purple_bg);
+}
+.purple_fg_line {
+    border: 0;
+    border-bottom: 2px solid var(--purple_fg);
+}
+.aqua_bg_line {
+    border: 0;
+    border-bottom: 2px solid var(--aqua_bg);
+}
+.aqua_fg_line {
+    border: 0;
+    border-bottom: 2px solid var(--aqua_fg);
+}
+.orange_bg_line {
+    border: 0;
+    border-bottom: 2px solid var(--orange_bg);
+}
+.orange_fg_line {
+    border: 0;
+    border-bottom: 2px solid var(--orange_fg);
+}
