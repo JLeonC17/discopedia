@@ -32,6 +32,8 @@ h2.tier_container {
     height: var(--imageHeight);
     width: var(--imageWidth);
     position: relative;
+    min-height: 80px;
+    min-width: 80px;
 }
 
 .album span {
@@ -71,8 +73,8 @@ h2.tier_container {
 }
 
 .album .imagen {
-    height: var(--imageHeight);
-    width: var(--imageWidth);
+    height: 100%;
+    width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;

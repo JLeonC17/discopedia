@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const enviarButton = document.querySelector('button[type="button"]');
 
     enviarButton.addEventListener("click", () => {
-        let isValid = true;
+        var isValid = true;
 
         if (!titulo.validity.valid) {
             handleValidation(titulo, tituloError);
