@@ -2,18 +2,19 @@
 @import url(header.css);
 
 .heading_container {
-    max-width: 95vw;
+    width: 95%;
     margin: 0 auto;
 }
 
 h2.heading_container {
+    text-align: left;
     margin-top: 20px;
     color: var(--fg1);
     font-variant: small-caps;
 }
 
 .album_container {
-    max-width: 90vw;
+    width: 95%;
     margin: 0 auto;
     padding: 10px 10px 5vh 10px;
     display: flex;
