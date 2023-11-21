@@ -83,6 +83,8 @@ h2.tier_container {
 .album .datos {
     height: var(--imageHeight);
     width: var(--imageWidth);
+    min-height: 80px;
+    min-width: 80px;
     position: relative;
     opacity: 0;
     transition: opacity 0.2s;

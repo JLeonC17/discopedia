@@ -7,45 +7,56 @@
     <link rel="stylesheet" href="./styles/subir.css">
 </head>
 <body>
-    <!-- Header -->
-    <div id="menu_container">
-        <header>
-            <div id="top_container">
-                <div id="logo_container">
-                    <img src="assets/logo.svg">
-                </div>
-                <div id="heading_container">
-                    <h1>Discopedia</h1>
-                    <h2>Proyecto Fullstack UTN</h2>
-                </div>
-                <div id="stripe_container">
-                    <span class="stripe red_fg"></span>
-                    <span class="stripe orange_fg"></span>
-                    <span class="stripe yellow_fg"></span>
-                </div>
+    
+   <!-- Header -->
+   <div id="menu_container">
+    <header>
+        <div id="top_container">
+            <div id="logo_container">
+                <img src="assets/logo.svg">
             </div>
-        </header>
-        <nav>
-            <ul class="nav_menu">
-                <a href="index.html" class="green_bg_line green_fg_hover">
-                    <li>Inicio</li>
-                </a>
-                <a href="pendiente.html" class="aqua_bg_line aqua_fg_hover">
-                    <li>Pendientes</li>
-                </a>
-                <a href="subir.html" class="blue_bg_line blue_fg_hover">
-                    <li>Subir</li>
-                </a>
-                <a class="purple_bg_line purple_fg_hover">
-                    <li>
-                        <form action="">
-                            <input type="text" name="busqueda" placeholder="🔍︎ Búsqueda">
-                        </form>
-                    </li>
-                </a>
-            </ul>
-        </nav>
-    </div>
+            <div id="heading_container">
+                <h1>Discopedia</h1>
+                <h2>Proyecto Fullstack UTN</h2>
+            </div>
+            <div id="stripe_container">
+                <span class="stripe red_fg"></span>
+                <span class="stripe orange_fg"></span>
+                <span class="stripe yellow_fg"></span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav_menu">
+            <a href="index.html" class="green_bg_line green_fg_hover">
+                <li class="big_screen">Inicio</li>
+                <li class="small_screen">
+                    <img src="assets/icons/home.svg" height="90%">
+                </li>
+            </a>
+            <a href="pendiente.html" class="aqua_bg_line aqua_fg_hover">
+                <li class="big_screen">Pendientes</li>
+                <li class="small_screen">
+                    <img src="assets/icons/pending.svg" height="90%">
+                </li>
+            </a>
+            <a href="subir.html" class="blue_bg_line blue_fg_hover">
+                <li class="big_screen">Subir</li>
+                <li class="small_screen">
+                    <img src="assets/icons/upload.svg" height="90%">
+                </li>
+            </a>
+            <a class="purple_bg_line purple_fg_hover">
+                <li>
+                    <form action="">
+                        <input class="big_screen" type="text" name="busqueda" placeholder="🔍︎ Búsqueda">
+                        <input class="small_screen" type="text" name="busqueda" placeholder="🔍︎">
+                    </form>
+                </li>
+            </a>
+        </ul>
+    </nav>
+</div>
 
     <!-- Body -->
     <div id="subir_container">
