@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discopedia</title>
+    <link rel="stylesheet" href="./styles/registro.css">
+</head>
+<body>
+    
+   <!-- Header -->
+   <div id="menu_container">
+    <header>
+        <div id="top_container">
+            <div id="logo_container">
+                <img src="assets/logo.svg">
+            </div>
+            <div id="heading_container">
+                <h1>Discopedia</h1>
+                <h2>Proyecto Fullstack UTN</h2>
+            </div>
+            <div id="stripe_container">
+                <span class="stripe red_fg"></span>
+                <span class="stripe orange_fg"></span>
+                <span class="stripe yellow_fg"></span>
+            </div>
+        </div>
+    </header>
+</div>
+
+    <!-- Body -->
+    
+    <div id="registration_container">
+        <form novalidate>
+            <label for="form_titulo">Usuario</label>
+            <div class="popup">
+                <input type="email" id="form_usuario" name="form_usuario" required>
+                <span class="popuptext" aria-live="polite"></span>
+            </div>
+            <label for="form_contraseña">Contraseña</label>
+            <div class="popup">
+                <input type="password" id="form_contraseña" name="form_contraseña" minlength="8" maxlength="16" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$" required>
+                <span class="popuptext" aria-live="polite"></span>
+            </div>
+            <div id="button_container">
+                <button type="button">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+     <!-- Footer -->
+     <div id="footer_container">
+        <footer>
+            <a href="https://www.linkedin.com/in/jleonc/" target="_blank">
+                <img src="assets/icons/linkedin.svg" alt="linkedin">
+            </a>
+            <p>Hecho con ❤︎ por José León</p>
+            <a href="https://github.com/JLeonC17" target="_blank">
+                <img src="assets/icons/github.svg" alt="github">
+            </a>
+        </footer>
+    </div>
+
+    <script src="scripts/loginRegistro.js"></script>
+
+</body>
+</html>

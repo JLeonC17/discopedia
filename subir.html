@@ -1,107 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discopedia</title>
     <link rel="stylesheet" href="./styles/subir.css">
 </head>
+
 <body>
-    
-   <!-- Header -->
-   <div id="menu_container">
-    <header>
-        <div id="top_container">
-            <div id="logo_container">
-                <img src="assets/logo.svg">
+
+    <!-- Header -->
+    <div id="menu_container">
+        <header>
+            <div id="top_container">
+                <div id="logo_container">
+                    <img src="assets/logo.svg">
+                </div>
+                <div id="heading_container">
+                    <h1>Discopedia</h1>
+                    <h2>Proyecto Fullstack UTN</h2>
+                </div>
+                <div id="stripe_container">
+                    <span class="stripe red_fg"></span>
+                    <span class="stripe orange_fg"></span>
+                    <span class="stripe yellow_fg"></span>
+                </div>
             </div>
-            <div id="heading_container">
-                <h1>Discopedia</h1>
-                <h2>Proyecto Fullstack UTN</h2>
-            </div>
-            <div id="stripe_container">
-                <span class="stripe red_fg"></span>
-                <span class="stripe orange_fg"></span>
-                <span class="stripe yellow_fg"></span>
-            </div>
-        </div>
-    </header>
-    <nav>
-        <ul class="nav_menu">
-            <a href="index.html" class="green_bg_line green_fg_hover">
-                <li class="big_screen">Inicio</li>
-                <li class="small_screen">
-                    <img src="assets/icons/home.svg" height="90%">
-                </li>
-            </a>
-            <a href="pendiente.html" class="aqua_bg_line aqua_fg_hover">
-                <li class="big_screen">Pendientes</li>
-                <li class="small_screen">
-                    <img src="assets/icons/pending.svg" height="90%">
-                </li>
-            </a>
-            <a href="subir.html" class="blue_bg_line blue_fg_hover">
-                <li class="big_screen">Subir</li>
-                <li class="small_screen">
-                    <img src="assets/icons/upload.svg" height="90%">
-                </li>
-            </a>
-            <a class="purple_bg_line purple_fg_hover">
-                <li>
-                    <form action="">
-                        <input class="big_screen" type="text" name="busqueda" placeholder="🔍︎ Búsqueda">
-                        <input class="small_screen" type="text" name="busqueda" placeholder="🔍︎">
-                    </form>
-                </li>
-            </a>
-        </ul>
-    </nav>
-</div>
+        </header>
+        <nav>
+            <ul class="nav_menu">
+                <a href="index.html" class="green_bg_line green_fg_hover">
+                    <li class="big_screen">Inicio</li>
+                    <li class="small_screen">
+                        <img src="assets/icons/home.svg" height="90%">
+                    </li>
+                </a>
+                <a href="pendiente.html" class="aqua_bg_line aqua_fg_hover">
+                    <li class="big_screen">Pendientes</li>
+                    <li class="small_screen">
+                        <img src="assets/icons/pending.svg" height="90%">
+                    </li>
+                </a>
+                <a href="subir.html" class="blue_bg_line blue_fg_hover">
+                    <li class="big_screen">Subir</li>
+                    <li class="small_screen">
+                        <img src="assets/icons/upload.svg" height="90%">
+                    </li>
+                </a>
+                <a class="purple_bg_line purple_fg_hover">
+                    <li>
+                        <form action="">
+                            <input class="big_screen" type="text" name="busqueda" placeholder="🔍︎ Búsqueda">
+                            <input class="small_screen" type="text" name="busqueda" placeholder="🔍︎">
+                        </form>
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Body -->
-    <div id="subir_container">
-        <div id="subir_imagen">
-        </div>
-        <div id="subir_datos">
+    <div id="search_container">
+        <div class="form_datos">
             <form novalidate>
                 <label for="form_titulo">Título</label>
-                <div class="popup">
+                <div class="validation_popup">
                     <input type="text" id="form_titulo" name="form_titulo" required>
-                    <span class="popuptext" aria-live="polite"></span>
+                    <span class="validation_popuptext" aria-live="polite"></span>
                 </div>
                 <label for="">Artista</label>
-                <div class="popup">
+                <div class="validation_popup">
                     <input type="text" id="form_artista" name="form_artista" required>
-                    <span class="popuptext" aria-live="polite"></span>
+                    <span class="validation_popuptext" aria-live="polite"></span>
                 </div>
-                <label for="">Año</label>
-                <div class="popup">
-                    <input type="text" id="form_año" name="form_año" pattern="([0-9])..." required>
-                    <span class="popuptext" aria-live="polite"></span>
-                </div>
-                <label for="">Imagen</label>
-                <button>Subir</button>
-               <label for="">Calificación</label>
-                <div class="popup">
-                    <select name="calificacion" id="form_calificacion">
-                        <option value="none" selected disabled hidden></option>
-                        <option value="Pendiente">Pendiente</option>
-                        <option value="S">S</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                        <option value="E">E</option>
-                    </select>
-                    <span class="popuptext" aria-live="polite"></span>
-                </div>
-                <button type="button">Subir</button>
+                <button type="button">Buscar</button>
             </form>
         </div>
     </div>
+    <div class="album_container">
+    </div>
 
-     <!-- Footer -->
-     <div id="footer_container">
+    <div class="selection_popup-container">
+        <div class="selection_popup">
+            <div id="selection_image">
+            </div>
+            <div class="form_datos">
+                <p id="selection_title"></p>
+                <p id="selection_year"></p>
+                <form novalidate>
+                   <label for="">Calificación</label>
+                    <div class="popup">
+                        <select name="calificacion" id="form_calificacion">
+                            <option value="none" selected disabled hidden></option>
+                            <option value="Pendiente">Pendiente</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                        <span class="popuptext" aria-live="polite"></span>
+                    </div>
+                    <button type="button">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer_container">
         <footer>
             <a href="https://www.linkedin.com/in/jleonc/" target="_blank">
                 <img src="assets/icons/linkedin.svg" alt="linkedin">
@@ -116,4 +125,5 @@
     <script src="scripts/subir.js"></script>
 
 </body>
+
 </html>

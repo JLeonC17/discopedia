@@ -1,0 +1,175 @@
+@import url(utils.css);
+@import url(header.css);
+
+:root {
+    --containerWidth: 17vw;
+}
+
+#registration_container {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh;
+    margin-left: 3vw;
+    min-height: 30vh;
+    margin-bottom: 30vh;
+}
+
+#registration_container form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: var(--containerWidth);
+}
+
+#registration_container label {
+    font-variant: small-caps;
+    color: var(--fg1);
+    margin-bottom: 4px;
+}
+
+#registration_container input,
+#registration_container select,
+#registration_container button {
+    margin-bottom: 2vh;
+    background-color: var(--bg2);
+    color: var(--fg4);
+    font-variant: small-caps;
+    border: 0;
+    font-size: 16px;
+}
+
+#registration_container input {
+    width: calc(var(--containerWidth) - 4px);
+    height: 2vh;
+    justify-content: center;
+}
+
+
+#registration_container button,
+#registration_container select {
+    font-size: 14px;
+}
+
+#registration_container input:focus,
+#registration_container select:focus,
+#registration_container button:focus {
+    outline: 2px solid var(--bg4);
+}
+
+#registration_container input:hover,
+#registration_container select:hover,
+#registration_container button:hover {
+    background-color: var(--bg3);
+}
+
+#button_container {
+    display: flex;
+    justify-content: space-between;
+    width: var(--containerWidth);
+}
+
+#button_container button {
+    margin: 0 calc(var(--containerWidth) * 0.3);
+    width: calc(var(--containerWidth) * 0.5);
+}
+
+@media only screen and (max-width: 1200px) {
+    :root {
+        --containerWidth: 95%;
+    }
+
+    #registration_container form {
+        align-items: center;
+    }
+
+    #button_container button {
+        margin: 0 calc(var(--containerWidth) * 0.4);
+        width: calc(var(--containerWidth) * 0.3);
+    }
+    
+}
+
+/* VALDATION CSS */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup .popuptext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    width: 10vw;
+    background-color: var(--red_fg);
+    color: var(--fg1);
+    border: 2px solid var(--red_bg);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--red_fg) transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s, fadeOut 0.5s 2s;
+    animation: fadeIn 0.5s, fadeOut 0.5s 2s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
